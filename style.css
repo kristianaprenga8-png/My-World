@@ -6,6 +6,7 @@
     --light: #f9f9fb;
 }
 
+/* RESET */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -19,11 +20,45 @@ body {
     line-height: 1.6;
 }
 
-/* HERO */
+/* NAVIGATION BAR */
+.navbar {
+    background: var(--dark);
+    padding: 15px 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    transition: 0.3s ease;
+}
+
+.navbar a:hover {
+    color: var(--cats);
+    transform: scale(1.1);
+}
+
+/* HERO SECTION WITH BACKGROUND IMAGE */
 header {
-    background: linear-gradient(135deg, var(--radiology), var(--gastronomy));
+    background: url("images/hero.jpg") center/cover no-repeat,
+        linear-gradient(135deg, var(--radiology), var(--gastronomy));
+    background-blend-mode: multiply;
     color: #fff;
-    padding: 60px 20px;
+    padding: 100px 20px;
     text-align: center;
 }
 
@@ -60,6 +95,12 @@ main {
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.passion-block:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
 }
 
 .passion-header {
@@ -103,45 +144,60 @@ main {
     color: var(--dark);
 }
 
-.image-placeholder {
-    margin-top: 15px;
-    border-radius: 10px;
-    padding: 14px;
-    text-align: center;
-    font-size: 0.9rem;
-    border: 1px dashed #ccc;
-    background: #fafafa;
-    color: #777;
-}
-
-.image-placeholder span {
-    display: block;
-    margin-top: 6px;
-    font-weight: 600;
-}
-
 .quote {
     margin-top: 10px;
     font-style: italic;
     color: #555;
 }
 
-/* FOOTER */
-footer {
+/* IMAGE STYLING */
+.image-placeholder {
+    margin-top: 15px;
+    padding: 14px;
     text-align: center;
-    padding: 25px 20px 40px;
-    font-size: 0.9rem;
-    color: #777;
 }
 
-footer a {
-    color: var(--radiology);
+.image-placeholder img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.image-placeholder img:hover {
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+.footer {
+    background: var(--dark);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.footer-button {
+    display: inline-block;
+    margin: 15px 0;
+    padding: 12px 20px;
+    background: var(--radiology);
+    color: white;
+    border-radius: 8px;
     text-decoration: none;
     font-weight: 600;
+    transition: 0.3s ease;
 }
 
-footer a:hover {
-    text-decoration: underline;
+.footer-button:hover {
+    background: #3a5a85;
+    transform: scale(1.05);
+}
+
+.footer-note {
+    margin-top: 10px;
+    font-size: 0.85rem;
+    opacity: 0.8;
 }
 
 /* MOBILE */

@@ -1,96 +1,130 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>My World: Radiology, Cats & Gastronomy</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet" /><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css" />
-
+  <head>
+    <meta charset="UTF-8" />
+    <title>My World: Radiology, Cats & Gastronomy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
-<body>
-  <header>
-    <h1>MY World: Radiology, Cats & Gastronomy</h1>
-    <p>Precision, curiosity, and flavor — three passions that shape how I see and enjoy the world.</p>
-  </header>
 
-  <main>
-    <div class="section-grid">
-      <!-- Radiology -->
-      <section class="passion-block">
-        <div class="passion-header radiology-header">
-          Radiology
-        </div>
-        <div class="passion-content">
-          <p>
-            Radiology is the science and art of seeing inside the human body without a single cut.
-            I love how it combines technology, physics, and medicine to reveal what is invisible to the naked eye.
-          </p>
-          <p class="tagline">
-            From X-rays to CT and MRI — every image tells a story.
-          </p>
-          <p class="fun-fact">
-            Fun fact: Radiology is often called “the art of seeing what others can’t.”
-          </p>
-          <div class="image-placeholder">
-  <img src="images/ct-scan.jpg" alt="Radiology" />
-</div>
+  <body>
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar">
+      <ul>
+        <li><a href="#radiology">Radiology</a></li>
+        <li><a href="#cats">Cats</a></li>
+        <li><a href="#gastronomy">Gastronomy</a></li>
+        <li>
+          <a
+            href="https://github.com/kristianaprenga8-png/My-World"
+            target="_blank"
+            >GitHub</a
+          >
+        </li>
+      </ul>
+    </nav>
 
-        </div>
-      </section>
+    <!-- HERO SECTION -->
+    <header>
+      <h1>MY World: Radiology, Cats & Gastronomy</h1>
+      <p>
+        Precision, curiosity, and flavor — three passions that shape how I see
+        and enjoy the world.
+      </p>
+    </header>
 
-      <!-- Cats -->
-      <section class="passion-block">
-        <div class="passion-header cats-header">
-          Cats
-        </div>
-        <div class="passion-content">
-          <p>
-            Cats are pure curiosity and calm in one small, fluffy body. Their quiet observation and sudden bursts of energy
-            remind me that life can be both peaceful and playful.
-          </p>
-          <p class="tagline">
-            Tiny observers, always watching — like little furry scientists.
-          </p>
-          <p class="fun-fact">
-            Fun fact: Cats spend up to two-thirds of their lives sleeping, but they never miss anything important.
-          </p>
-          <div class="image-placeholder">
-  <img src="images/my-babies.jpg" alt="Cat" />
-</div> 
-        </div>
-      </section>
+    <main>
+      <div class="section-grid">
+        <!-- Radiology -->
+        <section class="passion-block" id="radiology">
+          <div class="passion-header radiology-header">Radiology</div>
+          <div class="passion-content">
+            <p>
+              Radiology is the science and art of seeing inside the human body
+              without a single cut. I love how it combines technology, physics,
+              and medicine to reveal what is invisible to the naked eye.
+            </p>
+            <p class="tagline">
+              From X-rays to CT and MRI — every image tells a story.
+            </p>
+            <p class="fun-fact">
+              Fun fact: Radiology is often called “the art of seeing what others
+              can’t.”
+            </p>
 
-      <!-- Gastronomy -->
-      <section class="passion-block">
-        <div class="passion-header gastronomy-header">
-          Gastronomy
-        </div>
-        <div class="passion-content">
-          <p>
-            Gastronomy is where creativity, culture, and science meet on a plate. I’m passionate about how flavors,
-            textures, and techniques can turn simple ingredients into unforgettable experiences.
-          </p>
-          <p class="tagline">
-            Every dish is a story — from street food to fine dining.
-          </p>
-          <p class="quote">
-            “Cooking is chemistry you can eat.”
-          </p>
-          <div class="image-placeholder">
-  <img src="images/my-dish.jpg" alt="Food" />
-</div>
+            <div class="image-placeholder">
+              <img src="images/ct-scan.jpg" alt="Radiology" />
+            </div>
           </div>
-        </div>
-      </section>
-    </div>
-  </main>
-<footer>
-  <p>Made by Kristiana Prenga — radiology enthusiast, cat admirer, and gastronomy lover.</p>
+        </section>
 
-  <a href="https://github.com/kristianaprenga8-png/My-World" target="_blank">
-    Visit my GitHub project
-  </a>
-</footer>
-</body>
+        <!-- Cats -->
+        <section class="passion-block" id="cats">
+          <div class="passion-header cats-header">Cats</div>
+          <div class="passion-content">
+            <p>
+              Cats are pure curiosity and calm in one small, fluffy body. Their
+              quiet observation and sudden bursts of energy remind me that life
+              can be both peaceful and playful.
+            </p>
+            <p class="tagline">
+              Tiny observers, always watching — like little furry scientists.
+            </p>
+            <p class="fun-fact">
+              Fun fact: Cats spend up to two-thirds of their lives sleeping, but
+              they never miss anything important.
+            </p>
+
+            <div class="image-placeholder">
+              <img src="images/my-babies.jpg" alt="Cat" />
+            </div>
+          </div>
+        </section>
+
+        <!-- Gastronomy -->
+        <section class="passion-block" id="gastronomy">
+          <div class="passion-header gastronomy-header">Gastronomy</div>
+          <div class="passion-content">
+            <p>
+              Gastronomy is where creativity, culture, and science meet on a
+              plate. I’m passionate about how flavors, textures, and techniques
+              can turn simple ingredients into unforgettable experiences.
+            </p>
+            <p class="tagline">
+              Every dish is a story — from street food to fine dining.
+            </p>
+            <p class="quote">“Cooking is chemistry you can eat.”</p>
+
+            <div class="image-placeholder">
+              <img src="images/my-dish.jpg" alt="Food" />
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-content">
+        <p>
+          Made by Kristiana Prenga — radiology enthusiast, cat admirer, and
+          gastronomy lover.
+        </p>
+
+        <a
+          class="footer-button"
+          href="https://github.com/kristianaprenga8-png/My-World"
+          target="_blank"
+        >
+          Visit my GitHub project
+        </a>
+
+        <p class="footer-note">© 2026 • My World Project</p>
+      </div>
+    </footer>
+  </body>
 </html>
