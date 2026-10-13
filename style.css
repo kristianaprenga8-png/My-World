@@ -54,9 +54,7 @@ body {
 
 /* HERO SECTION */
 header {
-    background: url("images/hero.jpg") center/cover no-repeat,
-        linear-gradient(135deg, var(--radiology), var(--gastronomy));
-    background-blend-mode: multiply;
+    background: linear-gradient(135deg, var(--radiology), var(--gastronomy));
     color: #fff;
     padding: 100px 20px;
     text-align: center;
