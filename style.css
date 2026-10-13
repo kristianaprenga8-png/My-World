@@ -1,0 +1,152 @@
+:root {
+    --radiology: #4a6fa5;
+    --cats: #f2c57c;
+    --gastronomy: #d95f02;
+    --dark: #231d3c;
+    --light: #f9f9fb;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background: var(--light);
+    color: var(--dark);
+    line-height: 1.6;
+}
+
+/* HERO */
+header {
+    background: linear-gradient(135deg, var(--radiology), var(--gastronomy));
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.6rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* MAIN GRID */
+main {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.section-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* PASSION BLOCKS */
+.passion-block {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.passion-header {
+    padding: 18px 20px;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.radiology-header {
+    background: var(--radiology);
+}
+
+.cats-header {
+    background: var(--cats);
+    color: #3b2b1a;
+}
+
+.gastronomy-header {
+    background: var(--gastronomy);
+}
+
+.passion-content {
+    padding: 20px;
+}
+
+.passion-content p {
+    margin-bottom: 12px;
+}
+
+.tagline {
+    font-style: italic;
+    color: #666;
+    margin-top: 8px;
+}
+
+.fun-fact {
+    margin-top: 10px;
+    font-weight: 600;
+    color: var(--dark);
+}
+
+.image-placeholder {
+    margin-top: 15px;
+    border-radius: 10px;
+    padding: 14px;
+    text-align: center;
+    font-size: 0.9rem;
+    border: 1px dashed #ccc;
+    background: #fafafa;
+    color: #777;
+}
+
+.image-placeholder span {
+    display: block;
+    margin-top: 6px;
+    font-weight: 600;
+}
+
+.quote {
+    margin-top: 10px;
+    font-style: italic;
+    color: #555;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 25px 20px 40px;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+footer a {
+    color: var(--radiology);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+}
